@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="login-section">
+            <h1 class="title">Users App</h1>
+
+            <div class="from-block">
+                <form class="form" data-create-user-form>
+                    <div class="control-field">
+                        <label for="nameId" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameId" name="userName" required minlength="2" maxlength="23">
+                    </div>
+
+                    <div class="control-field">
+                        <label for="cityId" class="form-label">City</label>
+                        <input type="text" class="form-control" id="cityId" name="userCity" required minlength="2" maxlength="23">
+                    </div>
+
+                    <div class="control-field">
+                        <label for="emailId" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="emailId" name="userEmail" required>
+                    </div>
+
+                    <div class="control-field">
+                        <label for="imagesUrlId" class="form-label">Images</label>
+                        
+                        <select class="form-control form-control--images" name="imagesUrlId" id="imagesUrlId" required>
+                            <option value="">Image URL</option>
+                            <hr>
+                            <option value="https://avatars.mds.yandex.net/i?id=db2ee0dcd83eb956a938fe08d86c59daa24ce6c0-12382841-images-thumbs&n=13">Cat 1</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=11d5cca55ae3e2be1c7d596b78800d26bbbfc36d-12422218-images-thumbs&n=13">Cat 2</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=0e42a7a08aa0f30b1bb0da91fe76aad115368b1f-10448622-images-thumbs&n=13">Cat 3</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=3e622a65f3fd95a55ea2f3993d5cb8a94e8bf5f9-13013698-images-thumbs&n=13">Dog 1</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=8f1556da72ee9bea9c709dec05904715615ed10c-4522636-images-thumbs&n=13">Dog 2</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=f8ec568a23a0a5aa1d0e104b0ded072647ad5888-10555250-images-thumbs&n=13">Dog 3</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=bdea002c245bcbd1b6ee72d9253a8c615e17c8f7-9098836-images-thumbs&n=13">Wolf 1</option>
+                            <option value="https://avatars.mds.yandex.net/i?id=2a9338b3e572988ae349db96200d834abdc17a9c-12521528-images-thumbs&n=13">Fox 1</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">Create User</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div class="users-container" data-users-container></div>
+
+    <dialog class="edit-from-dialog" data-edit-user-form-dialog></dialog>
+
+</body>
+</html>
